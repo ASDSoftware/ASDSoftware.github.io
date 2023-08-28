@@ -186,3 +186,50 @@ footer {
 .footer-bottom {
     margin-top: 30px;
 }
+@media (max-width: 767px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+    .menu-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero {
+        padding: 60px 0;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .hero-heading {
+        font-size: 2rem;
+    }
+    .hero-description {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    .value-cards {
+        flex-direction: column;
+    }
+    .value-card {
+        margin: 15px 0;
+        padding: 20px;
+    }
+    .projects {
+        padding: 60px 0;
+    }
+    .project-cards {
+        flex-direction: column;
+    }
+    /* Additional adjustments for other sections if needed */
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar {
+        padding: 15px 40px;
+    }
+    .menu-list {
+        gap: 20px;
+    }
+    /* Adjust other styles as needed for tablets */
+}
