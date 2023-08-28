@@ -186,18 +186,20 @@ footer {
 .footer-bottom {
     margin-top: 30px;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
     .navbar {
         padding: 15px 40px;
     }
     .menu-list {
-        gap: 20px;
+        flex-direction: column;
+        gap: 15px;
     }
+}
+
+/* Responsive Hero Section */
+@media (max-width: 1024px) {
     .hero {
         padding: 60px 0;
-    }
-    .container {
-        flex-direction: column;
     }
     .hero-heading {
         font-size: 2rem;
@@ -206,49 +208,53 @@ footer {
         font-size: 1rem;
         margin-bottom: 20px;
     }
+    .hero-content,
+    .hero-image {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .hero-image img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Responsive Values Section */
+@media (max-width: 1024px) {
+    .values {
+        padding: 60px 0;
+    }
     .value-cards {
         flex-direction: column;
+        gap: 20px;
     }
     .value-card {
-        margin: 15px 0;
         padding: 20px;
     }
+}
+
+/* Responsive Projects Section */
+@media (max-width: 1024px) {
     .projects {
         padding: 60px 0;
     }
     .project-cards {
         flex-direction: column;
+        gap: 20px;
     }
-    /* Adjust other styles as needed for tablets */
 }
 
-/* Media Queries for Phone Screens */
-@media (max-width: 767px) {
-    .navbar {
-        padding: 10px 20px;
-    }
-    .menu-list {
+/* Responsive Footer */
+@media (max-width: 1024px) {
+    .footer-content {
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
+        align-items: center;
     }
-    .hero {
-        padding: 40px 0;
+    .footer-column {
+        margin-right: 0;
     }
-    .container {
-        flex-direction: column;
+    .footer-column.legal::after {
+        display: none;
     }
-    .hero-heading {
-        font-size: 1.5rem;
-    }
-    .hero-description {
-        font-size: 0.9rem;
-        margin-bottom: 15px;
-    }
-    .value-card {
-        padding: 15px;
-    }
-    .projects {
-        padding: 40px 0;
-    }
-    /* Adjust other styles as needed for phones */
 }
