@@ -186,13 +186,12 @@ footer {
 .footer-bottom {
     margin-top: 30px;
 }
-@media (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .navbar {
-        padding: 10px 20px;
+        padding: 15px 40px;
     }
     .menu-list {
-        flex-direction: column;
-        gap: 10px;
+        gap: 20px;
     }
     .hero {
         padding: 60px 0;
@@ -220,16 +219,36 @@ footer {
     .project-cards {
         flex-direction: column;
     }
-    /* Additional adjustments for other sections if needed */
+    /* Adjust other styles as needed for tablets */
 }
 
-/* Tablet Styles */
-@media (min-width: 768px) and (max-width: 1024px) {
+/* Media Queries for Phone Screens */
+@media (max-width: 767px) {
     .navbar {
-        padding: 15px 40px;
+        padding: 10px 20px;
     }
     .menu-list {
-        gap: 20px;
+        flex-direction: column;
+        gap: 10px;
     }
-    /* Adjust other styles as needed for tablets */
+    .hero {
+        padding: 40px 0;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .hero-heading {
+        font-size: 1.5rem;
+    }
+    .hero-description {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+    .value-card {
+        padding: 15px;
+    }
+    .projects {
+        padding: 40px 0;
+    }
+    /* Adjust other styles as needed for phones */
 }
