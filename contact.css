@@ -107,8 +107,9 @@ body{
     }
     .contact-form input,
     .contact-form textarea {
-        width: 80%;
+        width: 70%;
         margin-left:10% ;
+        margin-left:10%
 
     }
     .contact-form button{
